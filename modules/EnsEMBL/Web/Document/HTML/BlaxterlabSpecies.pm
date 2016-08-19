@@ -59,17 +59,17 @@ sub render_species_list {
 
   my (@ok_faves, %assemblies, %check_faves);
 
-  foreach (@{$hub->get_species_set('ASSEMBLY_ONLY')}) {
+  foreach (@{$hub->get_species_set('ANNOTATED_ASSEMBLIES')}) {
     next unless $species_info->{$_};
-    push @ok_extra, $species_info->{$_} unless $check_extra{$_}++;
-    #push @{$assemblies{$species_info->{$_}->{'scientific'}}}, $species_info->{$_};
+    push @ok_faves, $species_info->{$_}->{'scientific'} unless $check_faves{$species_info->{$_}->{'scientific'}}++;
+    push @{$assemblies{$species_info->{$_}->{'scientific'}}}, $species_info->{$_};
   }
-  #my $extra_html = $self->render_with_images(\@ok_extra,\%assemblies);
   my $html;
-  if (@ok_extra){
-    my $extra_html = $self->render_plain(@ok_extra);
-    $html = qq{<div class="lb-info-box"><h3 class="lb-heading">Assemblies without gene models</h3><div class="lb-extra-assemblies">$extra_html</div></div>};
+  if (@ok_faves){
+    my $fav_html = $self->render_with_images(\@ok_faves,\%assemblies);
+    $html = qq{<div class="static_favourite_species"><h3 class="lb-heading">Lepbase Ensembl genome browser - select a species/assembly to begin</h3><div class="species_list_container species-list">$fav_html</div></div>};
   }
+  
   return $html;
 }
 
