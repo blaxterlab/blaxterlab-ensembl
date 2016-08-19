@@ -168,31 +168,8 @@ sub content {
 ###
 # BEGIN LEPBASE MODIFICATION...
   my %alternate = (
-    'Amyelois_transitella_v1' => ['Plodia_interpunctella_v1','Chilo_suppressalis_CsuOGS1.0'],
-    'Bicyclus_anynana_v1.2' => ['Bicyclus_anynana','Danaus_plexippus_v3'],
-    'Bombyx_mori_ASM15162v1' => ['Bombyx_mori','Manduca_sexta_Msex_1.0'],
-    'Bombyx_mori' => ['Bombyx_mori_ASM15162v1','Manduca_sexta_Msex_1.0'],
-    'Calycopis_cecrops_v1.1' => ['Phoebis_sennae_v1.1','Danaus_plexippus_v3'],
-    'Chilo_suppressalis_CsuOGS1.0' => ['Amyelois_transitella_v1','Plodia_interpunctella_v1'],
-    'Danaus_plexippus' => ['Danaus_plexippus_v3','Heliconius_melpomene_Hmel2','Heliconius_erato_v1'],
-    'Danaus_plexippus_v3' => ['Danaus_plexippus','Heliconius_melpomene_Hmel2','Heliconius_erato_v1','Melitaea_cinxia'],
-    'Heliconius_erato_v1' => ['Heliconius_melpomene_Hmel2','Melitaea_cinxia','Danaus_plexippus_v3'],
-    'Heliconius_melpomene_Hmel2' => ['Heliconius_melpomene','Heliconius_erato_v1','Melitaea_cinxia','Danaus_plexippus_v3'],
-    'Heliconius_melpomene' => ['Heliconius_melpomene_Hmel2','Melitaea_cinxia'],
-    'Lerema_accius_v1.1' => ['Danaus_plexippus_v3'],
-    'Limnephilus_lunatus_v1' => ['Plutella_xylostella_DBM_FJ_v1.1'],
-    'Manduca_sexta_Msex_1.0' => ['Bombyx_mori_ASM15162v1'],
-    'Melitaea_cinxia' => ['Heliconius_melpomene_Hmel2','Heliconius_erato_v1','Danaus_plexippus_v3'],
-    'Operophtera_brumata_v1' => ['Bombyx_mori_ASM15162v1','Calycopis_cecrops_v1.1'],
-    'Papilio_glaucus_v1.1' => ['Papilio_machaon_Pap_ma_1.0','Papilio_polytes_Ppol_1.0'],
-    'Papilio_machaon_Pap_ma_1.0' => ['Papilio_glaucus_v1.1','Papilio_polytes_Ppol_1.0'],
-    'Papilio_polytes_Ppol_1.0' => ['Papilio_xuthus_Pxut_1.0','Papilio_xuthus_Pap_xu_1.0','Papilio_glaucus_v1.1'],
-    'Papilio_xuthus_Pap_xu_1.0' => ['Papilio_xuthus_Pxut_1.0','Papilio_polytes_Ppol_1.0','Papilio_glaucus_v1.1'],
-    'Papilio_xuthus_Pxut_1.0' => ['Papilio_xuthus_Pap_xu_1.0','Papilio_polytes_Ppol_1.0','Papilio_glaucus_v1.1'],
-    'Phoebis_sennae_v1.1' => ['Calycopis_cecrops_v1.1','Danaus_plexippus_v3'],
-    'Plodia_interpunctella_v1' => ['Spodoptera_frugiperda_v2','Bombyx_mori_ASM15162v1','Plutella_xylostella_DBM_FJ_v1.1'],
-    'Plutella_xylostella_DBM_FJ_v1.1' => ['Bombyx_mori_ASM15162v1','Plodia_interpunctella_v1'],
-    'Spodoptera_frugiperda_v2' => ['Operophtera_brumata_v1','Bombyx_mori_ASM15162v1']
+    'Bicyclus_anynana_v1.2' => ['Heliconius_melpomene_Hmel2','Bicyclus_anynana'],
+    'Heliconius_melpomene_Hmel2' => ['Bicyclus_anynana_v1.2','Heliconius_melpomene']
   );
 
   my $html = '';
@@ -209,7 +186,7 @@ sub content {
 
 
 
-  my $src = 'http://content.lepbase.org/pages/assemblies/assembly-stats.html?assembly='.$production_name.'&view=circle';
+  my $src = 'http://content.blaxterlab.org/pages/assemblies/assembly-stats.html?assembly='.$production_name.'&view=circle';
   if ($alternate{$production_name}){
     foreach my $alt (@{$alternate{$production_name}}){
       $src .= '&altAssembly='.$alt;
@@ -302,7 +279,7 @@ sub content {
 
 
   if ($genebuild == 1){
-    $src = 'http://content.lepbase.org/pages/annotations/codon-usage.html?assembly='.$production_name.'&view=plot&altView=table';
+    $src = 'http://content.blaxterlab.org/pages/annotations/codon-usage.html?assembly='.$production_name.'&view=plot&altView=table';
     if ($alternate{$production_name}){
       $src .= '&altAssembly='.$alternate{$production_name}->[0];
     }
