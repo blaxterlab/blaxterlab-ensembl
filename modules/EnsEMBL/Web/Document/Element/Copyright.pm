@@ -45,18 +45,16 @@ sub content {
 ## BEGIN LEPBASE MODIFICATIONS...
 my $html = '<div class=lb-ackn-logos>';
 $html .= '<a href="http://ed.ac.uk"><img title="University of Edinburgh" class="lb-footer-logo" src="/img/edinburgh_logo.png"></a>';
-$html .= '<a href="http://cam.ac.uk"><img title="University of Cambridge" class="lb-footer-logo" src="/img/cambridge_logo.jpg"></a>';
-$html .= '<a href="http://york.ac.uk"><img title="University of York" class="lb-footer-logo" src="/img/york_logo.jpg"></a>';
-$html .= '<a href="http://bbsrc.ac.uk"><img title="bbsrc" class="lb-footer-logo" src="/img/bbsrc_logo.jpg"></a>';
+#$html .= '<a href="http://bbsrc.ac.uk"><img title="bbsrc" class="lb-footer-logo" src="/img/bbsrc_logo.jpg"></a>';
 
 $html .= '</div>';
 
   return sprintf( qq(
   <div class="column-two left">
 		   %s release %s - %s -
-		  Lepbase &copy; <span class="print_hide"><a href="http://www.ed.ac.uk/" style="white-space:nowrap">Edinburgh University</a> / EnsEMBL &copy; <a href="http://www.ebi.ac.uk/" style="white-space:nowrap">EBI</a></span>
-      <span class="screen_hide_inline">Lepbase</span> %s
-  </div>),     "Lepbase", "3", "August 2016", $html
+		  Blaxre Lab Ensembl &copy; <span class="print_hide"><a href="http://www.ed.ac.uk/" style="white-space:nowrap">Edinburgh University</a> / EnsEMBL &copy; <a href="http://www.ebi.ac.uk/" style="white-space:nowrap">EBI</a></span>
+      <span class="screen_hide_inline">Blaxterlab</span> %s
+  </div>),     "Blaxter Lab Ensembl", "1", "August 2016", $html
 ## ...END LEPBASE MODIFICATIONS
 	       );
 

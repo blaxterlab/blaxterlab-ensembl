@@ -34,7 +34,7 @@ sub content {
   my $hub    = $self->hub;
   my $type   = $hub->type;
 ## BEGIN LEPBASE MODIFICATIONS...
-  my $e_logo = '<img src="/i/e.png" alt="LepBase Home" title="LepBase Home" class="print_hide" style="width:43px;height:40px" />'; 
+  my $e_logo = '<img src="/i/e.png" alt="Blaxter Lab Ensembl Home" title="Blaxter Lab Ensembl Home" class="print_hide" style="width:40px;height:40px" />'; 
 ## ...END LEPBASE MODIFICATIONS
 
   if ($type eq 'Help') {
@@ -43,7 +43,7 @@ sub content {
       $self->logo_img, $self->logo_print
 ## ...END LEPBASE MODIFICATIONS
     );
-  } 
+  }
 
 ## BEGIN LEPBASE MODIFICATIONS...
   return sprintf( '<a href="%s">%s</a>%s',
@@ -70,7 +70,7 @@ sub e_logo {
   return sprintf(
     '<a href="%s"><img src="%s%s" alt="%s" title="%s" class="print_hide" style="width:%spx;height:%spx" /></a>',
 ## BEGIN LEPBASE MODIFICATIONS...
-    'http://www.lepbase.org/', $self->img_url, 'e.png', $alt, $alt, 43, 40
+    'http://www.nematodes.org/', $self->img_url, 'e.png', $alt, $alt, 40, 40
 ## ...END LEPBASE MODIFICATIONS
   );
 }
