@@ -52,7 +52,7 @@ $html .= '</div>';
   return sprintf( qq(
   <div class="column-two left">
 		   %s release %s - %s -
-		  Blaxre Lab Ensembl &copy; <span class="print_hide"><a href="http://www.ed.ac.uk/" style="white-space:nowrap">Edinburgh University</a> / EnsEMBL &copy; <a href="http://www.ebi.ac.uk/" style="white-space:nowrap">EBI</a></span>
+		  Blaxter Lab Ensembl &copy; <span class="print_hide"><a href="http://www.ed.ac.uk/" style="white-space:nowrap">Edinburgh University</a> / EnsEMBL &copy; <a href="http://www.ebi.ac.uk/" style="white-space:nowrap">EBI</a></span>
       <span class="screen_hide_inline">Blaxterlab</span> %s
   </div>),     "Blaxter Lab Ensembl", "1", "August 2016", $html
 ## ...END LEPBASE MODIFICATIONS
