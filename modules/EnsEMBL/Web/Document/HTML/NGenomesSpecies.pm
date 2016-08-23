@@ -24,7 +24,7 @@ All modifications licensed under the Apache License, Version 2.0, as above.
 
 =cut
 
-package EnsEMBL::Web::Document::HTML::BlaxterlabSpecies;
+package EnsEMBL::Web::Document::HTML::NGenomesSpecies;
 
 use strict;
 
@@ -69,7 +69,7 @@ sub render_species_list {
     my $fav_html = $self->render_with_images(\@ok_faves,\%assemblies);
     $html = qq{<div class="static_favourite_species"><h3 class="lb-heading">Lepbase Ensembl genome browser - select a species/assembly to begin</h3><div class="species_list_container species-list">$fav_html</div></div>};
   }
-  
+
   return $html;
 }
 
