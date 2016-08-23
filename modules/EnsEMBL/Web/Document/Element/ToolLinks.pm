@@ -47,7 +47,7 @@ sub content {
   my $blog  = $sd->ENSEMBL_BLOG_URL;
   push @links,   '<a href="http://blast.ngenomes.org" title="BLAST"><div class="lb-menu-category"><img title="tools" src="/i/tools-icon.png" class="lb-menu-linkicon"/>BLAST</div></a>';
   push @links,   '<a href="http://download.ngenomes.org" title="Download"><div class="lb-menu-category"><img title="download" src="/i/download-icon.png" class="lb-menu-linkicon"/>Downloads</div></a>';
-  push @links,   '<a href="http://nematodes.org" title="nematodes.org"><div class="lb-menu-category"><img title="nematodes" src="/i/blaxterlab-icon.png" class="lb-menu-linkicon"/>nematodes.org</div></a>';
+  push @links,   '<a href="http://nematodes.org" title="nematodes.org"><div class="lb-menu-category"><img title="nematodes" src="/i/ngenomes-icon.png" class="lb-menu-linkicon"/>nematodes.org</div></a>';
 #  push @links,   '<a href="http://lepbase.org/category/help" title="Help"><div class="lb-menu-category"><img title="lepbase" src="/i/help-icon.png" class="lb-menu-linkicon"/>Help</div></a>';
 #  push @links,   '<a class="constant" href="http://webapollo.lepbase.org" title="WebApollo">WebApollo</a>';
 #  push @links,   '<a class="constant" href="http://lepbase.org/category/tools/" title="Tools">Tools</a>';
