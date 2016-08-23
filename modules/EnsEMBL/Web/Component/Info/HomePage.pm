@@ -186,7 +186,7 @@ sub content {
 
 
 
-  my $src = 'http://content.blaxterlab.org/pages/assemblies/assembly-stats.html?assembly='.$production_name.'&view=circle';
+  my $src = 'http://content.ngenomes.org/pages/assemblies/assembly-stats.html?assembly='.$production_name.'&view=circle';
   if ($alternate{$production_name}){
     foreach my $alt (@{$alternate{$production_name}}){
       $src .= '&altAssembly='.$alt;
@@ -279,7 +279,7 @@ sub content {
 
 
   if ($genebuild == 1){
-    $src = 'http://content.blaxterlab.org/pages/annotations/codon-usage.html?assembly='.$production_name.'&view=plot&altView=table';
+    $src = 'http://content.ngenomes.org/pages/annotations/codon-usage.html?assembly='.$production_name.'&view=plot&altView=table';
     if ($alternate{$production_name}){
       $src .= '&altAssembly='.$alternate{$production_name}->[0];
     }
