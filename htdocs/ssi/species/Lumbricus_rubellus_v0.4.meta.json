@@ -1,0 +1,32 @@
+{
+   "assembly" : {
+      "span" : "442750330",
+      "name" : "v0.4",
+      "scaffold_count" : "323369",
+      "date" : "2013-04-17",
+      "n" : "1811843",
+      "accession" : " ",
+      "atgc" : "440938487",
+      "gc_percent" : "40.6"
+   },
+   "species" : {
+      "display_name" : "Lumbricus rubellus v0.4",
+      "scientific_name" : "Lumbricus rubellus",
+      "taxonomy_id" : "35632",
+      "common_name" : "humus earthworm"
+   },
+   "provider" : {
+      "name" : "Blaxter Lab",
+      "url" : "http://earthworms.org"
+   },
+   "genebuild" : {
+      "start_date" : "2016-09",
+      "method" : "import",
+      "transcript_count" : "44359",
+      "cds_count" : "44359",
+      "gene_count" : "44359",
+      "exon_count" : "116383",
+      "version" : "1"
+   }
+}
+

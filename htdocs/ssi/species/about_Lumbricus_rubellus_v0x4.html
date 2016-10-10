@@ -1,0 +1,28 @@
+<!-- {about} --><a name="about"></a>
+  
+<p>
+Earthworms are essential to the life and health of the planet&#39;s soils, and thus to the life and health of terrestrial ecosystems. Charles Darwin and others have shown that earthworms both make soil, and ensure its fertility. Lumbricus rubellus is a common earthworm, found in many temperate ecosystems, used as a model species by researchers investigating the biology and ecology of the soil, and the effects of pollutants and other chemicals on soil organisms. It is a key species in the emerging field of ecotoxicogenomics, and is also being recruited to understand the effect of environmental toxicants on the epigenome (&quot;ecotoxicoepigenomics&quot;). This draft genome project was an <a href="http://www.research.ed.ac.uk/portal/en/projects/sequencing-the- genome-of-a-soil-sentinel-the-earthworm-lumbricus-rubellus(9b2f65bc-971c-4264-8898-facd72531ec1).html">(NERC funded)</a> collaboration between the laboratories of Mark Blaxter (Edinburgh), Peter Kille (Cardiff) and David Spurgeon (CEH). It is unpublished (October 2016), and an improved assembly is being worked on by the Kille group in Cardiff.
+</p>
+  <p>Picture credit: Mark Blaxter (Edinburgh)</p>
+
+<!-- {about} -->
+<!-- {assembly} --><a name="assembly"></a>
+  <h2 id="assembly" style="margin-bottom:5px">Assembly</h2>
+	<p>
+This draft assembly was produced by Benjamin Elsworth as part of his PhD research into the ecogenomics of L. rubellus. The assembly used a range of single-end and paired end Illumina data from GA1 and GA2 instruments (50-fold coverage in ~50 base reads), and Roche 454 data from single-end libraries (3-fold coverage in ~290 base reads). The final assembly used a both ABySS and Newbler, merged using minimus2 from the AMOS package.
+	</p>
+<!-- {assembly} -->
+<!-- {annotation} --><a name="annotation"></a>
+  <h2 id="annotation" style="margin-bottom:5px">Annotation</h2>
+  <p>
+Repetitive regions were identified with REPET and RepeatMasker. noncoding RNAs were identified using the RFam database. A set of core eukaryotic genes was identified using the CEGMA pipeline, and these gene models then used to train gene finders pipelined within MAKER. The annotation was carried out in MAKER, using Sanger EST and Roche 454 transcriptome data as evidence, and exporting AUGUSTUS and protein2genome models. Some models were subsequently hand-improved.
+</p>
+<!-- {annotation} -->
+<!-- {references} -->
+  <h2>References</h2>
+  <ol>
+<li><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2440553/">Owen, J., et al. (2008). Transcriptome profiling of developmental and xenobiotic responses in a keystone soil animal, the oligochaete annelid Lumbricus rubellus. BMC genomics, 9, 266.</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/18589989">Svendsen, C., et al. (2008). Comparative transcriptomic responses to chronic cadmium, fluoranthene, and atrazine exposure in Lumbricus rubellus. Environmental science &amp; technology, 42, 4208-4214.</a></li>
+<li><a href="https://www.ncbi.nlm.nih.gov/pubmed/23063995">Anderson, C. J., et al. (2013). Life-history effects of arsenic toxicity in clades of the earthworm Lumbricus rubellus. Environmental pollution, 172, 200-207. doi:10.1016/j.envpol.2012.09.005.</a></li>
+  </ol>
+ <!-- {references} -->

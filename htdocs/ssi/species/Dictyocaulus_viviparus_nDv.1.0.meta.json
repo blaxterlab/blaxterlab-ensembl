@@ -1,0 +1,32 @@
+{
+   "provider" : {
+      "url" : "http://nematodes.org",
+      "name" : "Blaxter Lab"
+   },
+   "genebuild" : {
+      "transcript_count" : "14306",
+      "start_date" : "2016-05",
+      "version" : "1",
+      "method" : "import",
+      "exon_count" : "131258",
+      "gene_count" : "14306",
+      "cds_count" : "14306"
+   },
+   "species" : {
+      "common_name" : "Dictyocaulus viviparus",
+      "scientific_name" : "Dictyocaulus viviparus",
+      "taxonomy_id" : "29172",
+      "display_name" : "Dictyocaulus viviparus nDv.1.0"
+   },
+   "assembly" : {
+      "span" : "169388535",
+      "accession" : " ",
+      "scaffold_count" : "17715",
+      "n" : "500375",
+      "name" : "nDv.1.0",
+      "atgc" : "168888160",
+      "gc_percent" : "34.54",
+      "date" : "2015-10-28"
+   }
+}
+

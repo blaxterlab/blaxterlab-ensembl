@@ -1,0 +1,32 @@
+{
+   "genebuild" : {
+      "gene_count" : "78075",
+      "exon_count" : "269075",
+      "method" : "import",
+      "transcript_count" : "78075",
+      "cds_count" : "78075",
+      "version" : "1",
+      "start_date" : "2016-10"
+   },
+   "assembly" : {
+      "name" : "gLs.1.0",
+      "gc_percent" : "37.36",
+      "n" : "164065347",
+      "span" : "997095996",
+      "accession" : " ",
+      "date" : "2015-10-28",
+      "atgc" : "833030649",
+      "scaffold_count" : "148229"
+   },
+   "species" : {
+      "common_name" : "Great pond snail",
+      "taxonomy_id" : "6523",
+      "display_name" : "Lymnaea_stagnalis gLs.1.0 augustus",
+      "scientific_name" : "Lymnaea stagnalis"
+   },
+   "provider" : {
+      "name" : "Blaxter Lab",
+      "url" : "http://nematodes.org"
+   }
+}
+
