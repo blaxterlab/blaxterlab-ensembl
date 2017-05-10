@@ -18,7 +18,7 @@ limitations under the License.
 
 =head1 MODIFICATIONS
 
-Copyright [2014-2015] University of Edinburgh
+Copyright [2014-2017] University of Edinburgh
 
 All modifications licensed under the Apache License, Version 2.0, as above.
 
@@ -35,8 +35,7 @@ sub content {
 ## BEGIN LEPBASE MODIFICATIONS...
   return qq(
     <div class="twocol-right right">
-      <a href="http://www.nematodes.org" title="nematodes.org">nematodes.org</a> |
-      <a href="mailto:mark.blaxter\@ed.ac.uk" title="mark.blaxter\@ed.ac.uk">contact us</a> |
+      <a href="https://github.com/genomehubs/genomehubs/issues" title="report an issue">report an issue</a> |
       <a href="http://www.ensembl.org/" title="ensembl.org"><img style="height:auto;margin-top:-5px;background:none;border:none;" src="/i/empowered.png"></img></a>
     </div>)
   ;
