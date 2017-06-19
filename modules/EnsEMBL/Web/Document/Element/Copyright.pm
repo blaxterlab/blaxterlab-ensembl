@@ -18,7 +18,7 @@ limitations under the License.
 
 =head1 MODIFICATIONS
 
-Copyright [2014-2015] University of Edinburgh
+Copyright [2014-2017] University of Edinburgh
 
 All modifications licensed under the Apache License, Version 2.0, as above.
 
